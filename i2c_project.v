@@ -171,7 +171,7 @@ else if(state==3'd2)begin//write on slave
 				end
 				else begin
                  if(sda_dev_in==0)
-			            state2=0;
+			            cnt_state2=0;
 			        else
 			            state=3'd4;//transition to stop stage				
 				end
@@ -213,7 +213,7 @@ else if(state==3'd3)begin//read from slave
 				end
 				else begin
                  if(sda_in==0)
-			            state3=0;
+			            cnt_state3=0;
 			        else
 			            state=3'd4;//transition to stop stage				
 				end
